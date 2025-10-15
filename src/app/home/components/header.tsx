@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function LandingPageHeader() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen w-full">
-            <h1 className='text-5xl font-bold mb-10 text-purple-900'>Tech Lover's World</h1>
+            <h1 className='text-5xl font-bold mb-10 text-purple-900'>Tech Lovers World</h1>
             <div className='flex flex-row items-center justify-center w-full mb-5 p-5 bg-purple-100 rounded-lg shadow-lg'>
                 <div className='flex flex-col mr-8'>
                     <h1 className="text-3xl font-bold mb-3 text-purple-900">{landingpagesliders[0].title}</h1>

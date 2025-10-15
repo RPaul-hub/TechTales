@@ -6,8 +6,8 @@ export default function Blogs() {
         <div>
             <h1 className="text-2xl font-semi-bold my-5">Latest Articles</h1>
             {blogs.map((blog) => (
-                <div className="mb-4">
-                    <BlogCard key={blog.id} {...blog}/>
+                <div key={blog.id} className="mb-4">
+                    <BlogCard {...blog}/>
                 </div>
             ))}
         </div>

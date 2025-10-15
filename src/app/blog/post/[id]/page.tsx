@@ -2,9 +2,7 @@ import { blogs } from "../../../lib/placeholder-data";
 import BlogCard from "../../../ui/blocks/blog-card";
 
 export default function Blogs({ params }: { params: { id: number } }) {
-    console.log(params.id);
     const post = blogs.find((posts) => posts.id === Number(params.id));
-    console.log(post);
     if (!post) {
         return (
             <div>
@@ -19,8 +17,4 @@ export default function Blogs({ params }: { params: { id: number } }) {
             <BlogCard {...post}/>
         </div>
     )
-}
-
-function texttonumber(id: number) {
-    throw new Error("Function not implemented.");
 }
